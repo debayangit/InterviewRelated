@@ -83,7 +83,7 @@ class RemoveLoopLinkedList {
 		list.head.next.next.next.next = new Node(10); 
 
 		// Creating a loop for testing 
-		head.next.next.next.next.next = head.next; 
+		head.next.next.next.next.next = head.next.next; 
 		list.detectAndRemoveLoop(head); 
 		System.out.println("Linked List after removing loop : "); 
 		list.printList(head); 
