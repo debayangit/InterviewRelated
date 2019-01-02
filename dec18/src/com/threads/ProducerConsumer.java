@@ -55,14 +55,16 @@ public class ProducerConsumer
 		t1.join(); 
 		t2.join(); 
 	} 
+	
+} 
 
-	// This class has a list, producer (adds items to list 
+//This class has a list, producer (adds items to list 
 	// and consumber (removes items). 
-	public static class PC 
+	 class PC 
 	{ 
 		// Create a list shared by producer and consumer 
 		// Size of list is 2. 
-		PC pcLock=new PC();
+		Object pcLock=new String();
 		LinkedList<Integer> list = new LinkedList<>(); 
 		int capacity = 2; 
 
@@ -123,4 +125,3 @@ public class ProducerConsumer
 			} 
 		} 
 	} 
-} 
