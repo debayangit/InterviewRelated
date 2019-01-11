@@ -1,13 +1,11 @@
 package com.geeksforgeeks.arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
-
-class ChallengesRelatedToArray {
+public class ChallengesRelatedToArray {
 
 	@Test
-	void kadanesArray() {
+	public void kadanesArray() {
 		//Given an array arr of N integers. Find the contiguous sub-array with maximum sum
 
 		int[] arr1= {1, 2, 3, -2, 5};
@@ -32,7 +30,7 @@ class ChallengesRelatedToArray {
 	}
 
 	@Test
-	void missingNumber() {
+	public void missingNumber() {
 		//Given an array C of size N-1 and given that there are numbers from 1 to N with one element missing, the missing number is to be found.
 		int arr1[]= {1, 2, 3, 5};
 		int arr2[] = {1, 2, 3, 4, 5, 6, 7, 8, 10};
@@ -58,7 +56,7 @@ class ChallengesRelatedToArray {
 
 
 	@Test
-	void subArrayWithSum() {
+	public void subArrayWithSum() {
 
 		int arr[] = {15, 2, 4, 8, 9, 5, 10, 23}; 
 		int n = arr.length; 
