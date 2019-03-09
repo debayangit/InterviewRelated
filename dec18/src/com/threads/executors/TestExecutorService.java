@@ -20,7 +20,31 @@ public class TestExecutorService {
   execService.execute(new TestTask("ThirdTestTask"));
   execService.execute(new TestTask("FourthTestTask"));
   execService.execute(new TestTask("FifthTestTask"));
+  execService.execute(new TestTask("SixthTestTask"));execService.execute(new TestTask("FirstTestTask"));
+  execService.execute(new TestTask("SecondTestTask"));
+  execService.execute(new TestTask("ThirdTestTask"));
+  execService.execute(new TestTask("FourthTestTask"));
+  execService.execute(new TestTask("FifthTestTask"));
+  execService.execute(new TestTask("SixthTestTask"));execService.execute(new TestTask("FirstTestTask"));
+  execService.execute(new TestTask("SecondTestTask"));
+  execService.execute(new TestTask("ThirdTestTask"));
+  execService.execute(new TestTask("FourthTestTask"));
+  execService.execute(new TestTask("FifthTestTask"));
+  execService.execute(new TestTask("SixthTestTask"));execService.execute(new TestTask("FirstTestTask"));
+  execService.execute(new TestTask("SecondTestTask"));
+  execService.execute(new TestTask("ThirdTestTask"));
+  execService.execute(new TestTask("FourthTestTask"));
+  execService.execute(new TestTask("FifthTestTask"));
   execService.execute(new TestTask("SixthTestTask"));
   execService.shutdown();
+  System.out.println(Runtime.getRuntime().availableProcessors());
+  ExecutorService execService2 = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+
  }
+}
+class ThreadSafeFormatter extends ThreadLocal<Integer> {
+	public static ThreadLocal<Integer> integers= ThreadLocal.withInitial(
+			()-> new Integer(11)			
+			);
+	
 }

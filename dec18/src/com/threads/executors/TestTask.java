@@ -19,7 +19,7 @@ public class TestTask implements Runnable {
 		try {
 			//log.debug(this.taskName + " is sleeping...");
 			System.out.println(this.taskName + " is sleeping...");
-			Thread.sleep(3000);
+			Thread.sleep(30);
 			// log.debug(this.taskName + " is running...");
 			System.out.println(this.taskName + " is running...");
 		} catch (InterruptedException e) {
